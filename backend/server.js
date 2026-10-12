@@ -14,6 +14,13 @@ app.get("/api", (req, res) => {
   });
 });
 
+app.get('/api/test', (req, res) => {
+  res.json({
+    success: true,
+    message: 'Frontend đã kết nối Backend!'
+  });
+});
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
